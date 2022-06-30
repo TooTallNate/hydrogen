@@ -102,7 +102,7 @@ export const renderHydrogen = (App: any) => {
     const log = getLoggerWithContext(request);
 
     const response = new HydrogenResponse(null, {
-      headers: headers ? headers : {},
+      headers: headers || {},
     });
 
     if (hydrogenConfig.poweredByHeader ?? true) {
